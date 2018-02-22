@@ -9,6 +9,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 
 public class NewTest {
 
@@ -36,9 +38,8 @@ public class NewTest {
     @Test
     public void testRtSection() {
         driver.get("http://demo.guru99.com/test/guru99home/");
-        Select dropdown = new Select(driver.findElement(By.className("dropdown-menu")));
-        dropdown.selectByVisibleText("Accessing Link");
-        System.out.println(dropdown.toString());
+        String elems = driver.findElements(By.cssSelector("ul.dropdown-menu>li.a")).get(3).getText();
+        Assert.assertTrue(elems.equals("Accessing Link"));
     }
 
 
