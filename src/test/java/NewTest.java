@@ -29,7 +29,7 @@ public class NewTest {
         chromeOptions.addArguments("headless");
         chromeOptions.addArguments("no-sandbox");
         chromeOptions.addArguments("window-size=1024x758");
-        chromeOptions.addArguments("port=9516");
+        chromeOptions.addArguments("port=9515");
         driver = new ChromeDriver(chromeOptions);
     }
     @AfterTest
