@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -23,9 +24,9 @@ public class NewTest {
     @BeforeTest
     public void beforeTest() {
         String chromeDriverPath = "/usr/bin/chromedriver";
-        File file = new File(chromeDriverPath);
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
-        driver = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setBinary(chromeDriverPath);
+        driver = new ChromeDriver(chromeOptions);
     }
     @AfterTest
     public void afterTest() {
