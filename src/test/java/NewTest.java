@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
@@ -34,8 +35,8 @@ public class NewTest {
     @Test
     public void testRtSection() {
         driver.get("http://demo.guru99.com/test/guru99home/");
-        String title = driver.findElement(By.id("navbar-brand-centered")).getText();
-        System.out.println("TITLE -> "+title);
+        WebElement title = driver.findElement(By.id("navbar-brand-centered")).findElement(By.linkText("../../test/link.html"));
+        Assert.assertTrue(title.getText().contains("Accessing Link"));
     }
 
 
