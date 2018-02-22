@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -35,8 +36,9 @@ public class NewTest {
     @Test
     public void testRtSection() {
         driver.get("http://demo.guru99.com/test/guru99home/");
-        WebElement title = driver.findElement(By.id("navbar-brand-centered")).findElement(By.linkText("../../test/link.html"));
-        Assert.assertTrue(title.getText().contains("Accessing Link"));
+        Select dropdown = new Select(driver.findElement(By.className("dropdown-menu")));
+        dropdown.selectByVisibleText("Accessing Link");
+        System.out.println(dropdown.toString());
     }
 
 
