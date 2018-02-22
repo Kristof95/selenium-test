@@ -5,6 +5,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.File;
+
 
 public class NewTest {
 
@@ -21,7 +23,8 @@ public class NewTest {
     @BeforeTest
     public void beforeTest() {
         String chromeDriverPath = "/usr/bin/chromedriver";
-        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+        File file = new File(chromeDriverPath);
+        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
         driver = new ChromeDriver();
     }
     @AfterTest
