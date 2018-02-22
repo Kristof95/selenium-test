@@ -27,6 +27,7 @@ public class NewTest {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setBinary(chromeDriverPath);
         chromeOptions.addArguments("headless");
+        chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("window-size=1024x758");
         driver = new ChromeDriver(chromeOptions);
     }
