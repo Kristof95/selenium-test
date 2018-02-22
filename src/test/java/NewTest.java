@@ -38,7 +38,7 @@ public class NewTest {
     @Test
     public void testRtSection() {
         driver.get("http://demo.guru99.com/test/guru99home/");
-        String elems = driver.findElements(By.cssSelector("ul.dropdown-menu>li.a")).get(3).getText();
+        String elems = driver.findElements(By.cssSelector("ul.dropdown-menu>li.a")).get(0).getText();
         Assert.assertTrue(elems.equals("Accessing Link"));
     }
 
