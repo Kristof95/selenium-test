@@ -1,5 +1,5 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -9,6 +9,8 @@ public class NewTest {
 
     private WebDriver driver;
 
+
+
     @Test
     public void testEasy() {
         driver.get("http://demo.guru99.com/test/guru99home/");
@@ -17,7 +19,8 @@ public class NewTest {
     }
     @BeforeTest
     public void beforeTest() {
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+        driver = new FirefoxDriver();
     }
     @AfterTest
     public void afterTest() {

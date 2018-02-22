@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">56,5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">NewTest</td><td><a href="#m1"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1519294672254</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">NewTest</td><td><a href="#m2"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1519294728731</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">NewTest</td><td><a href="#m3"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1519294728729</td><td class="numi">1</td></tr>
+</table>
+<h1>Surefire test</h1>
+<h2 id="m1">NewTest:beforeTest</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1519294684601	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1519294684601	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1519294684804	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1519294684804	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1519294684811	addons.xpi-utils	DEBUG	Successfully read XPI database
+1519294684916	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684916	DeferredSave.webext.sc.lz4	DEBUG	Starting timer
+1519294684965	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684983	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684984	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684984	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684985	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684987	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684988	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684991	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684991	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684992	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684992	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684993	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684994	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684994	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684995	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684996	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684997	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684999	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685000	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685001	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685001	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685002	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685003	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685006	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685007	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685008	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685008	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685009	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685009	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685009	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685010	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685011	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685012	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685013	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685014	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685014	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685015	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685016	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685017	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685017	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685018	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685018	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685020	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685021	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685023	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685025	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685026	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685027	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685030	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685030	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685033	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685036	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685092	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685092	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294689919	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1519294689931	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;WUPNOTE101&apos;, ip: &apos;192.168.112.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at NewTest.beforeTest(NewTest.java:23)
+<br/>28 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1519294684601	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1519294684601	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1519294684804	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1519294684804	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1519294684811	addons.xpi-utils	DEBUG	Successfully read XPI database
+1519294684916	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684916	DeferredSave.webext.sc.lz4	DEBUG	Starting timer
+1519294684965	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684983	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684984	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684984	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684985	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684987	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684988	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684991	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684991	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684992	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684992	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684993	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684994	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684994	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684995	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684996	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684997	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294684999	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685000	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685001	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685001	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685002	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685003	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685006	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685007	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685008	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685008	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685009	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685009	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685009	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685010	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685011	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685012	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685013	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685014	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685014	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685015	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685016	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685017	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685017	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685018	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685018	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685020	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685021	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685023	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685025	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685026	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685027	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685030	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685030	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685033	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685036	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685092	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294685092	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1519294689919	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1519294689931	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at NewTest.beforeTest(NewTest.java:23)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">NewTest:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">NewTest:testEasy</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
