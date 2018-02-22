@@ -23,13 +23,13 @@ public class NewTest {
     }
     @BeforeTest
     public void beforeTest() {
-        String chromeDriverPath = "/usr/bin/chromedriver";
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setBinary(chromeDriverPath);
         chromeOptions.addArguments("headless");
         chromeOptions.addArguments("no-sandbox");
         chromeOptions.addArguments("window-size=1024x758");
         chromeOptions.addArguments("port=9515");
+        chromeOptions.addArguments("disable-gpu");
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         driver = new ChromeDriver(chromeOptions);
     }
     @AfterTest
