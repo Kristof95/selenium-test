@@ -34,7 +34,8 @@ public class NewTest {
     @Test
     public void testRtSection() {
         driver.get("http://demo.guru99.com/test/guru99home/");
-        driver.findElement(By.id("navbar-brand-centered")).click();
+        String title = driver.findElement(By.id("navbar-brand-centered")).getText();
+        System.out.println("TITLE -> "+title);
     }
 
 
