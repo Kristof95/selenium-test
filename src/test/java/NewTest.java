@@ -1,12 +1,16 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 public class NewTest {
@@ -22,14 +26,14 @@ public class NewTest {
         Assert.assertTrue(title.contains("Demo Guru99 Page"));
     }
     @BeforeTest
-    public void beforeTest() {
-        String chromeDriverPath = "/usr/bin/chromedriver";
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setBinary(chromeDriverPath);
-        chromeOptions.addArguments("headless");
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("window-size=1024x758");
-        driver = new ChromeDriver(chromeOptions);
+    public void beforeTest() throws MalformedURLException {
+//        String chromeDriverPath = "/usr/bin/chromedriver";
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.setBinary(chromeDriverPath);
+//        chromeOptions.addArguments("headless");
+//        chromeOptions.addArguments("--no-sandbox");
+//        chromeOptions.addArguments("window-size=1024x758");
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:9515"), DesiredCapabilities.chrome());
     }
     @AfterTest
     public void afterTest() {
