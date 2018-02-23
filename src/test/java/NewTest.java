@@ -24,7 +24,7 @@ public class NewTest {
         chromeOptions.addArguments("window-size=1024x758");
         chromeOptions.addArguments("port=9515");
         chromeOptions.addArguments("disable-gpu");
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/plugins/chromedriver");
         driver = new ChromeDriver(chromeOptions);
     }
 
