@@ -34,13 +34,6 @@ public class NewTest {
         Assert.assertTrue(title.contains("Demo Guru99 Page"));
     }
 
-    @Test
-    public void testRtSection() {
-        driver.get("http://demo.guru99.com/test/guru99home/");
-        String elems = driver.findElements(By.cssSelector("ul.dropdown-menu>li.a")).get(0).getText();
-        Assert.assertTrue(elems.equals("Accessing Link"));
-    }
-
 
     @AfterTest
     public void afterTest() {
